@@ -14,7 +14,7 @@
     "migrate": "biome migrate --write"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.18",
+    "@tailwindcss/vite": "^4.2.2",
     "@tanstack/router-plugin": "^1.133.21",
     "@tanstack/solid-query": "latest",
     "@tanstack/solid-query-devtools": "latest",
@@ -23,7 +23,7 @@
     "@tanstack/solid-router-ssr-query": "latest",
     "@tanstack/solid-start": "latest",
     "solid-js": "^1.9.11",
-    "tailwindcss": "^4.1.18",
+    "tailwindcss": "^4.2.2",
     "vite-tsconfig-paths": "^5.1.4"
   },
   "devDependencies": {
