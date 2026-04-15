@@ -31,6 +31,17 @@ If you prefer not to use Tailwind CSS:
 4. Uninstall the packages: `pnpm add @tailwindcss/vite tailwindcss --dev`
 
 
+## Solid-UI
+
+This installation of Solid-UI follows the manual instructions but was modified to work with Tailwind V4.
+
+To install the components, run the following command (this install button):
+
+```bash
+pnpm dlx solidui-cli@latest add button
+```
+
+
 
 ## Routing
 

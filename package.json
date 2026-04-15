@@ -10,11 +10,11 @@
     "test": "vitest run",
     "format": "biome format",
     "lint": "biome lint",
-    "check": "biome check --write",
+    "check": "biome check",
     "migrate": "biome migrate --write"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.2.2",
+    "@tailwindcss/vite": "^4.1.18",
     "@tanstack/router-plugin": "^1.133.21",
     "@tanstack/solid-query": "latest",
     "@tanstack/solid-query-devtools": "latest",
@@ -23,8 +23,13 @@
     "@tanstack/solid-router-ssr-query": "latest",
     "@tanstack/solid-start": "latest",
     "solid-js": "^1.9.11",
-    "tailwindcss": "^4.2.2",
-    "vite-tsconfig-paths": "^5.1.4"
+    "tailwindcss": "^4.1.18",
+    "vite-tsconfig-paths": "^5.1.4",
+    "@fontsource/inter": "^5.1.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.5",

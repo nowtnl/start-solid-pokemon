@@ -10,9 +10,11 @@
   "git": true,
   "routerOnly": false,
   "version": 1,
+  "addOns": true,
   "framework": "solid",
   "chosenAddOns": [
     "biome",
-    "tanstack-query"
+    "tanstack-query",
+    "solid-ui"
   ]
 }
