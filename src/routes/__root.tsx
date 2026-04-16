@@ -1,15 +1,15 @@
+import { TanStackDevtools } from "@tanstack/solid-devtools";
+import { SolidQueryDevtoolsPanel } from "@tanstack/solid-query-devtools";
 import {
 	createRootRouteWithContext,
 	HeadContent,
 	Outlet,
 	Scripts,
 } from "@tanstack/solid-router";
-import { TanStackRouterDevtools } from "@tanstack/solid-router-devtools";
+import { TanStackRouterDevtoolsPanel } from "@tanstack/solid-router-devtools";
 import { Suspense } from "solid-js";
 import { HydrationScript } from "solid-js/web";
-
 import Header from "../components/Header";
-
 import styleCss from "../styles.css?url";
 
 export const Route = createRootRouteWithContext()({
@@ -20,6 +20,16 @@ export const Route = createRootRouteWithContext()({
 });
 
 function RootComponent() {
+	const plugins = () => [
+		{
+			name: "Router",
+			render: <TanStackRouterDevtoolsPanel />,
+		},
+		{
+			name: "Query",
+			render: <SolidQueryDevtoolsPanel />,
+		},
+	];
 	return (
 		<html lang="en">
 			<head>
@@ -30,7 +40,10 @@ function RootComponent() {
 				<Suspense>
 					<Header />
 					<Outlet />
-					<TanStackRouterDevtools />
+					<TanStackDevtools
+						config={{ position: "bottom-right" }}
+						plugins={plugins()}
+					/>
 				</Suspense>
 				<Scripts />
 			</body>
